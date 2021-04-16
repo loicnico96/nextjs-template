@@ -25,7 +25,7 @@ module.exports = {
     "react-hooks",
   ],
   rules: {
-    "import/order": ["warn", {
+    "import/order": ["error", {
       "groups": [
         ["builtin", "external"],
         ["internal"],
