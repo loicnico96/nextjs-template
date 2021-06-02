@@ -1,21 +1,16 @@
 import { AppProps } from "next/app"
-import Head from "next/head"
 import React from "react"
+import { ThemeProvider } from "styled-components"
 
-import Layout from "components/Layout"
+import PageHead from "components/PageHead"
+import { GlobalStyle, theme } from "config/theme"
 
-import "styles/globals.css"
-
-function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Head>
-        <title>App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <PageHead />
       <Component {...pageProps} />
-    </Layout>
+    </ThemeProvider>
   )
 }
-
-export default App
