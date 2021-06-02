@@ -80,6 +80,7 @@ module.exports = {
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
 
     // Possible Errors
+    "no-await-in-loop": ["warn"],
     "no-console": ["warn"],
     "no-promise-executor-return": ["error"],
     "no-unreachable-loop": ["error"],
@@ -87,7 +88,6 @@ module.exports = {
 
     // Best Practices
     "block-scoped-var": ["error"],
-    "consistent-return": ["error"],
     "curly": ["error", "all"],
     "default-case": ["error"],
     "default-case-last": ["error"],
@@ -111,6 +111,7 @@ module.exports = {
     "no-restricted-syntax": ["error", "SequenceExpression"],
     "no-return-assign": ["error"],
     "no-script-url": ["error"],
+    "no-self-assign": ["error"],
     "no-self-compare": ["error"],
     "no-unmodified-loop-condition": ["error"],
     "no-useless-call": ["error"],
