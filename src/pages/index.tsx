@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "components/Layout"
+import PageLayout from "components/PageLayout"
 
 export default function Home() {
-  return <Layout>App</Layout>
+  return <PageLayout>App</PageLayout>
 }
